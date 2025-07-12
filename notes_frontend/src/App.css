@@ -27,6 +27,13 @@
   color: var(--text-primary);
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-content {
+  flex: 1;
+  padding-bottom: 60px; /* Space for footer */
 }
 
 .App-logo {

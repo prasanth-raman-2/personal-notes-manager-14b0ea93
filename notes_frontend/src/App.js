@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
+import Footer from './components/Footer';
 import './App.css';
 
 // PUBLIC_INTERFACE
@@ -18,7 +19,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-content">
+        <header className="App-header">
         <button 
           className="theme-toggle" 
           onClick={toggleTheme}
@@ -41,7 +43,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+        </header>
+      </div>
+      <Footer />
     </div>
   );
 }
